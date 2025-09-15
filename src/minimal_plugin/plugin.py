@@ -3,7 +3,6 @@ from typing import Annotated
 from ocelescope import OCEL, OCELAnnotation, Plugin, PluginInput, Resource, plugin_method
 
 
-
 class MinimalResource(Resource):
     label = "Minimal Resource"
     description = "A minimal resource"
@@ -14,6 +13,7 @@ class MinimalResource(Resource):
 
 class Input(PluginInput, frozen=True):
     pass
+
 
 class MinimalPlugin(Plugin):
     label = "Minimal Plugin"
